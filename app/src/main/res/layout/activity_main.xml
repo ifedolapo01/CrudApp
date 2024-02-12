@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/txt_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="user_id"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txt_user_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_id"
+        android:layout_marginTop="10dp"
+        android:text="senior"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/txt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_category"
+        android:layout_marginTop="20dp"
+        android:text="name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txt_user_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_name"
+        android:layout_marginTop="10dp"
+        android:text="department"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txt_user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_department"
+        android:layout_marginTop="10dp"
+        android:text="phone"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txt_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_phone"
+        android:layout_marginTop="10dp"
+        android:text="email"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout1"
+        android:layout_below="@+id/txt_user_email"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Add"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout2"
+        android:layout_below="@+id/btn_layout1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="View"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
